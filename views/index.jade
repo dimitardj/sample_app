@@ -1,0 +1,12 @@
+head
+	|<style type="text/css">
+	include ./../public/stylesheets/style.css
+	include ./../public/stylesheets/bootstrap.min.css
+	|</style>
+body
+	script(src='./utils/jquery-1.11.3.js')
+	if user
+		include ./views/main.html
+	else
+		include ./views/login.html
+		script(src='./controllers/login.js')

@@ -1,0 +1,27 @@
+<div name="IBANSearch" class="ibanSearch module" method="post">
+<form name="login" action="/welcome" method="post">
+	<fieldset class="clearfix">
+		<p>Search by IBAN the withrawals made from the client account.</p>
+		<p>
+			<span class="fontawesome-iban">IBAN</span>
+			<input type="text" name="iban" required/>
+		</p>
+		<input type="submit", class="loginBtn", value="Find" />
+	</fieldset>
+</form>
+
+<div id="resultsGrid">
+	<table id="resultsTable">
+		<tr>
+			<th>Bank</th>
+			<th>IBAN</th>
+			<th>Withrawal</th>
+		</tr>
+	</table>
+</div>
+</div>
+
+<script type="text/javascript" src="../models/withrawal.js"></script>
+<script type="text/javascript" src="../stores/withrawal.js"></script>
+<script type="text/javascript" src="../controllers/grid/main.js"></script>
+<script type="text/javascript" src="../controllers/main.js"></script>

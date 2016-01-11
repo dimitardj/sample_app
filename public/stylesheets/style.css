@@ -1,0 +1,200 @@
+body {
+  position: relative;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+body:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(public/images/background.jpg); 
+    width: 100%;
+    height: 100%;
+    opacity : 0.2;
+    z-index: -1;
+}
+
+div.module {
+	background-color: #2c3338;
+	color: #606468;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+input {
+	border: none;
+	font-family: 'Open Sans', Arial, sans-serif !important;
+	font-size: 14px !important;
+	line-height: 1.5em !important;
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+a {
+  color: #00B7FF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.spannable {
+	width:100%;
+	height:100%;
+}
+
+.loginbox {
+    width: 25%;
+    height: 200px;
+    box-shadow: 0px 0px 8px 8px #2c3338;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/*---------FONTAWESOME----------*/
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+/*---------FONTAWESOME----------*/
+
+.clearfix { *zoom: 1; } /* For IE 6/7 */
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+.clearfix:after { clear: both; }
+
+.loginbox {
+	margin: 50px auto;
+	width: 280px;
+}
+
+.ibanSearch {
+	margin: 50px auto;
+	width: 400px;
+}
+
+.loginbox input,
+.ibanSearch input {
+	height: 50px !important;
+}
+
+.loginbox form span,
+.ibanSearch form span {
+	background-color: #363b41;
+	border-radius: 3px 0px 0px 3px;
+	-moz-border-radius: 3px 0px 0px 3px;
+	-webkit-border-radius: 3px 0px 0px 3px;
+	color: #606468;
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+
+
+.loginbox form span.fontawesome-user{
+	background-image: url(public/images/username20.png);
+}
+
+.loginbox form span.fontawesome-lock{
+	background-image: url(public/images/password20.png);
+}
+
+.loginbox form input[type="text"], input[type="password"] ,
+.ibanSearch form input[type="text"], input[type="password"] {
+
+	background-color: #3b4148 !important;
+	border-radius: 0px 3px 3px 0px !important;
+	-moz-border-radius: 0px 3px 3px 0px !important;
+	-webkit-border-radius: 0px 3px 3px 0px !important;
+	border-color: #3B4148 !important;
+	color: #606468 !important;
+	margin-bottom: 1em !important;
+	padding: 0 16px !important;
+	width: 230px !important;
+}
+
+.loginbox form input[type="submit"],
+.ibanSearch form input[type="submit"] {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: #ea4c88;
+	color: #eee;
+	font-weight: bold;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+	width: 280px;
+}
+
+.loginbox form input[type="submit"]:hover,
+.ibanSearch form input[type="submit"]:hover {
+	background-color: #d44179;
+}
+
+.loginbox > p,
+.ibanSearch > p {
+	text-align: center;
+}
+
+#resultsTable th {
+	background-color: yellow;
+}
+
+table th {
+	background-color: gray;
+	border-width: 2px;
+	border-color: black;
+}
+
+table{
+	margin-bottom: 10px;
+}
+
+.redAlert {
+	background-color: red;
+	color: white;
+}
+.yellowAlert {
+	background-color: yellow;
+}
+.greenAlert {
+	background-color: white;
+	color: black;
+}
+/*
+#resultsTable th {
+	background-color: yellow;
+}*/
+
+table th {
+	width: 150px;
+}
+
+table, th, td {
+	margin-top: 5px;
+    border: 1px solid black;
+}
+
+input {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+input.loginBtn {
+	margin-top: 5px;
+}
