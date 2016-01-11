@@ -12,7 +12,6 @@ function usersController(repository) {
   };
 
   this.loginUser = function(req, res) {
-    console.log(this.repository);
     repository.getUserData(req.body.user,req.body.pass)
     .then(function(rows) {
       if (rows.length >= 1){
